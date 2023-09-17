@@ -58,8 +58,6 @@ header:hover a{
     background-size: cover;
     background-position:center;
     background-color: #000015; 
-
-    
 }
 .hero-description{
     height: 650px;
@@ -71,7 +69,6 @@ header:hover a{
     margin: auto !important;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 
@@ -103,6 +100,12 @@ header:hover a{
 }
 .name:hover {
     color: #c2f9f4;
+}
+.name-1 {
+    color: rgb(0, 81, 255);
+}
+.name-1:hover {
+    color: rgb(208, 162, 250);
 }
 .social{
     width:100%;
