@@ -58,6 +58,8 @@ header:hover a{
     background-size: cover;
     background-position:center;
     background-color: #000015; 
+
+    
 }
 .hero-description{
     height: 650px;
@@ -69,6 +71,7 @@ header:hover a{
     margin: auto !important;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 
@@ -166,7 +169,27 @@ h3{
 }
 .game-list:hover{
     transform: scale(1.05);
+} 
+.text-game:hover{
+    /* color: rgb(77, 228, 255); */
+    background: linear-gradient(
+    to right, 
+    #A6CE37, #ECE71C, #0FC6E6, #F95D44, #816271, #9F1958, #081B6A, #59D7EE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+    font-weight: bold;
+    font-style: italic;
 }
+@keyframes background-slide {
+    100% {
+      background-position: -1060px;
+    }
+}
+
 .store{
     margin-top: 50px;
 }
