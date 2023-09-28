@@ -742,7 +742,16 @@ html {
     .event-image img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+    }
+    .event-image:hover img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transition: .5s ease;
+        cursor: pointer;
     }
     .contact-list{
         width: 300px;
