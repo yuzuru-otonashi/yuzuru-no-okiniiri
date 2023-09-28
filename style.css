@@ -697,12 +697,13 @@ html {
         padding-top: -30px;
     }
     .name{
+        position:absolute;
+        margin-top: 25px;
+    } 
+    .name-1{
         position: absolute;
         margin-top: 70px;
-    }
-    .name-1{
         margin-left: 110px;
-        margin-top: 70px;
     }
     .aboutme, .hero-text p{
         text-align: justify;
