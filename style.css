@@ -698,11 +698,11 @@ html {
     }
     .name{
         position:absolute;
-        margin-top: 25px;
+        margin-top: 15px;
     } 
     .name-1{
         position: absolute;
-        margin-top: 70px;
+        margin-top: 15px;
         margin-left: 110px;
     }
     .aboutme, .hero-text p{
@@ -763,6 +763,13 @@ html {
     }
     .contact-list p{
         font-size: 12px ;
+    }
+    .address{
+	opacity: .9;
+    }
+    .address{
+	transform: scale(1.1);
+	    -webkit-transform: scale(1.1);
     }
     h5{
         font-size: 15px;
