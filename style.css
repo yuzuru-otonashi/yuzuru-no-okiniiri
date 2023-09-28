@@ -690,8 +690,7 @@ html {
     }
     .hero-title{
         font-size: 25px;
-        padding-top: 50px;
-        text-align: center;
+	margin-top: -30px;
     }
     .hero-title-name{
         font-size: 25px;
