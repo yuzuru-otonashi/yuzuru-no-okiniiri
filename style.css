@@ -44,6 +44,16 @@ body{
 header:hover a{
     background-color: rgb(0, 81, 255);
 }
+.header-screen{
+    background: linear-gradient(
+        300deg, 
+        rgba(71,114,152,1) 8%, 
+        rgba(20,26,33,1) 8%, 
+        rgba(20,26,33,1) 8%, 
+        rgba(20,26,33,1) 85%, 
+        rgba(0,0,0,1) 85%
+    );
+}
 .heeder-large-screen{
     display: flex !important;
     justify-content: space-evenly !important;
@@ -57,12 +67,10 @@ header:hover a{
     font-size: 13px !important;
     color: #000015;
     background-color: rgb(0, 81, 255);
-
 }
 #navDemo:hover a{
     color: rgb(2, 2, 2);
 }
-
 .hero{
     height: 650px;
     background-image: url(assets/img/hatsune_miku_sakura-wallpaper-1280x800.jpg);
@@ -70,8 +78,6 @@ header:hover a{
     background-size: cover;
     background-position:center;
     background-color: #000015; 
-
-    
 }
 .hero-description{
     height: 650px;
@@ -83,23 +89,17 @@ header:hover a{
     margin: auto !important;
     display: flex;
     flex-wrap: wrap;
-    
 }
-
-
 .hero-text p{
     color:white;
     width: 50%;
 }
 .hero-title{
-     /* padding-top:80px; */
-     font-weight: 800;
+    font-weight: 800;
     text-transform: uppercase;
     font-size: 80px;
     color:rgb(0, 81, 255);
-    
     text-align: center;
-
 }
 .hero-title-name {
     /* padding-top:80px; */
@@ -108,7 +108,6 @@ header:hover a{
     font-size: 80px;
     color:rgb(0, 81, 255);
     text-align: center;
-     
 }
 .name {
     color: rgb(0, 81, 255);
@@ -134,6 +133,10 @@ header:hover a{
 }
 .icons:hover{
     color: #3396ff;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: .5 ease;
+    box-shadow: 6px 7px 20px #000000;
 }
 main{
     width:80% !important;
@@ -148,8 +151,6 @@ main{
     text-transform: uppercase;
     text-shadow: 5px 7px 4px blue;
 }
-
-
 .game-logo img{
     width:100%;
     height: 100%;
@@ -160,7 +161,6 @@ h3{
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 .games{
     display: flex;
     
@@ -242,13 +242,15 @@ h3{
     height: 100%;
     object-fit: cover;
 }
-.game-image:hover, .game-store-list img{
+.game-image:hover, 
+.game-store-list img{
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     transition: transform .5s ease;
     cursor: progress;
 }
-.game-video:hover, .game-store-list video{
+.game-video:hover, 
+.game-store-list video{
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
     transition: transform .5s ease;
@@ -343,23 +345,22 @@ u::after, u:hover{
     margin-top: 50px;
     border:1px solid black;
     border-radius: 10px;
-    
 }
 .event-text{
     width:50%;
-    color: orange;
-
 }
 .event-title{
-    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 50px;
     text-transform: uppercase;
-
-    font-weight: 600;
-    
-
+    font-weight: 900;
+    color: #88f7f5;
+    text-shadow: 9px 9px #313030;
+    line-height: 109%;
 }
 .event-image{
-    width:400px;
+    width: 400px;
     height: 500px;
 }
 .event-image img{
@@ -367,16 +368,29 @@ u::after, u:hover{
     height: 100%;
     object-fit: contain;
 }
+.event-image:hover img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transition: .5s ease;
+    cursor: pointer;
+}
 .event-text p{
     color: white;
+}
+.badge{
+    background-color: #1bc0c0;
+    color: #020202;
+    padding: 10px;
+    font-weight: bold;
 }
 .aboutme, .hero-text p{
     text-align: justify;
     width: 100%;
 }
 .contact{
-    
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -384,6 +398,16 @@ u::after, u:hover{
 .contact-list{
     margin-top: 15px !important;
     color: white;
+}
+.footer-screen{
+    background: linear-gradient(
+        300deg, 
+        rgba(71,114,152,1) 15%, 
+        rgba(20,26,33,1) 15%, 
+        rgba(20,26,33,1) 15%, 
+        rgba(20,26,33,1) 92%, 
+        rgba(0,0,0,1) 92%
+    );
 }
 h5{
     color:white;
@@ -393,12 +417,41 @@ span{
 }
 /* .contact-list p{
 } */
+.address{
+    opacity: .9;
+        -webkit-transition: transform 400ms;
+    transition: transform 400ms;
+}
+.address:hover,
+.address:focus,
+.address:active{
+    transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    transition: .5 ease-in;
+}
 .email-contact{
-    width:80%;
+    width: 50%;
     color: gray;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.email-contact,
+.email-btn a{
+    text-decoration: none;
+    background-color: #f44336;
+    border-radius: 8px;
+}
+.email-btn:hover,
+.email-contact:hover a{
+    background-color: #030303;
+    transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    transition: .5 ease;
+}
+a:hover h5{
+    color: #3396ff;
+    font-weight: bold;
 }
 
 /*General CSS and CSS reset*/
@@ -431,6 +484,7 @@ html {
     }
     .hero-title{
         font-size:50px;
+        margin-bottom: -20px;
     }
     .hero-title-name{
         font-size: 50px;
@@ -438,6 +492,28 @@ html {
     .aboutme, .hero-text p{
         text-align: justify;
         width: 100%;
+        font-size: 16px;
+        margin-top: 100px;
+        margin-bottom: -110px;
+    }
+    .name{
+        position: absolute;
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    .name-1{
+        position: absolute;
+        font-size: 50px;
+        margin-top: 70px;
+        margin-left: 220px;
+    }
+    .social{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .icons{
+        margin-top: 110px;
+        margin-bottom: -80px;
     }
 }
 
@@ -481,6 +557,15 @@ html {
     .icons{
         margin-top: 30px;
     }
+    .event-image:hover img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transition: .5s ease;
+        cursor: pointer;
+    }
 }
 
 /*Small screens - tablets*/
@@ -491,6 +576,9 @@ html {
     header a{
         font-size: 14px;
     }
+    #navDemo{
+        opacity: 1;
+    }
     .hero{
         height: 400px !important;
         background-image: url(assets/img/cropped-400-300-676790.jpg);
@@ -500,36 +588,36 @@ html {
         background-color: rgba(0, 0, 21, .7);
     }
     .hero-title{
-        font-size: 30px;
-        margin-top: -20px;
+        font-size: 25px;
+        margin-top: -10px;
     }
     .hero-title-name{
-        font-size: 30px;
+        font-size: 25px;
         margin-top: -10px;
     }
     .name{
         position:absolute;
-        margin-top: 20px;
+        margin-top: 25px;
     } 
     .name-1{
         position: absolute;
-        margin-top: 20px;
-        margin-left: 140px;
+        margin-top: 25px;
+        margin-left: 115px;
     }
     .aboutme, .hero-text p{
         text-align: justify;
         width: 100%;
-        font-size: 12px;
-        margin-top: 40px;
-        margin-bottom: -40px;
+        font-size: 11px;
+        margin-top: 60px;
+        margin-bottom: -50px;
     }
     .social{
         width:100%;
-        margin-top: 25px;
-        margin-bottom: -50px;
+        margin-top: 5px;
+        margin-bottom: -70px;
     }
     .icons{
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .title{
         text-align: center;
@@ -537,8 +625,7 @@ html {
     }
     .event-text{
         width:80%;
-        color: blueviolet;
-
+        color: #88f7f5;
     }
     .event-text p{
         font-size: 13px;
@@ -547,6 +634,7 @@ html {
         font-size: 30px;
         text-transform: uppercase;
         font-weight: 600;
+        color: #88f7f5;
     }
     .event-hero{
         width: 80% ;
@@ -559,7 +647,16 @@ html {
     .event-image img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+    }
+    .event-image:hover img{
+        width: 110%;
+        height: 110%;
+        object-fit: contain;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transition: .5s ease;
+        cursor: pointer;
     }
     .contact-list{
         width: 300px;
@@ -569,7 +666,6 @@ html {
     }
     .contact-list p{
         font-size: 14px ;
-
     }
     h5{
         font-size: 17px;
@@ -591,7 +687,6 @@ html {
     .hero-description{
         height: 450px;
         background-color: rgba(0, 0, 21, .7);
-    
     }
     .hero-title{
         font-size: 25px;
@@ -625,8 +720,7 @@ html {
     }
     .event-text{
         width:100%;
-        color: blueviolet;
-
+        color: #88f7f5;
     }
     .event-text p{
         font-size: 13px;
@@ -634,7 +728,8 @@ html {
     .event-title{
         font-size: 30px;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 900;
+        color: #88f7f5;
     }
     .event-hero{
         width: 90% ;
@@ -657,16 +752,12 @@ html {
     }
     .contact-list p{
         font-size: 12px ;
-
     }
     h5{
         font-size: 15px;
     }
-    /* .badge{
-
-    } */
+    /* .badge{ }*/
     p{
         font-size: 12px;
     }
-    
 }
