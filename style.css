@@ -730,6 +730,8 @@ html {
         text-transform: uppercase;
         font-weight: 900;
         color: #88f7f5;
+	text-shadow: 9px 9px #313030;
+        line-height: 109%;
     }
     .event-hero{
         width: 90% ;
